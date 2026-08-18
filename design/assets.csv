@@ -16,3 +16,6 @@ ritual_ambient,audio,"Sparse bowed metal, rain on roof tiles, distant funeral be
 vow_feedback,audio,"Three short ritual confirmations: bronze lock, paper whisper and cord snap",sfx,"style_formula","generate"
 memorial_ledger_ui,narrative_ui,procedural,"Rain-warped memorial ledger panel with brass clips, faded ink, wet paper edges and a restrained vermilion decision seal",responsive,"style_formula","procedural"
 three_witnesses,narrative_content,text,"守灯人陆生、缄口巫祝阿绫、渡魂捕头沈砚的三段雨夜证词；每段引出两难与可回看的命簿记录",n/a,"style_formula","authored"
+heavenly_lantern_vfx,terminal_reward_vfx,procedural,"Third-lantern ascension: three bronze lantern beams converge into a rain-clearing eclipse seal, then release a large amber-teal blast",dynamic,"style_formula","procedural"
+black_rain_chronicle,environmental_narrative,text,"封河夜、割名令、命簿焚城以环境碑文、阶段广播和结局档案串联；每次祭灯选择改写历史注脚",n/a,"style_formula","authored"
+encirclement_spawn,encounter_system,procedural,"Four-direction encounter compass with north/east/south/west pressure markers and alternating enemy approach lanes",dynamic,"style_formula","procedural"
