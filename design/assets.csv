@@ -1,0 +1,16 @@
+﻿id,role,type,description,size/ratio,style line ref,source
+style_formula,visual_contract,text,"Gritty grounded Chinese folk-horror realism rendered as rain-soaked lacquered wood, weathered bronze and layered mineral-pigment surfaces; heavy silhouettes edged by restrained dry-brush charcoal marks; environment in blue-black wet stone, soot and desaturated indigo, lantern bearer in warm aged-brass and parchment tones, hostile spirits in oxidized teal, irreversible danger in vermilion cord; oppressive cold rain, dense low mist and hard warm lantern pools; high contrast between interactive ritual signals and subdued backgrounds, clean readable silhouettes, consistent top-down perspective across all assets.",n/a,"STYLE FORMULA - byte-identical contract",reference_media[0]
+shrine_relic_courtyard,combat_environment,background,"Flooded ancestral shrine courtyard with lacquered threshold, collapsed incense burner, wet slate and three distant ritual lantern stations",16:9,"style_formula","reference_media[0]"
+lantern_bearer_relic,player_sprite,sprite,"Worn indigo-robed lantern bearer carrying a scarred bronze lantern and a bundle of wet memorial slips; relative_scale 1.0",1:1,"style_formula","reference_media[1]"
+paper_doll_relic,enemy_sprite,sprite,"Torn funeral-paper puppet with bamboo ribs, water-stained talismans and visible stitched mouth; relative_scale 0.9",1:1,"style_formula","reference_media[2]"
+masked_carrier_relic,enemy_sprite,sprite,"Mask-wearing ritual carrier holding a leaking oxidized-teal soul lantern; relative_scale 1.15",1:1,"style_formula","reference_media[3]"
+bell_wraith_relic,enemy_sprite,sprite,"Sodden bell wraith wrapped in crimson cord and ash paper; relative_scale 1.05",1:1,"style_formula","reference_media[4]"
+lantern_colossus_relic,boss_sprite,sprite,"Ritual colossus assembled from charred lantern frames, mourning cloth and teal fire; relative_scale 2.4",1:1,"style_formula","reference_media[5]"
+ritual_lantern_station,world_interactable,sprite,"Weathered bronze shrine lantern on a black stone plinth, three readable vow seals around its base; relative_scale 1.5",1:1,"style_formula","generate"
+relic_memory_seal,pickup_sprite,sprite,"Folded wet memorial slip sealed with oxidized-teal wax, readable collectible; relative_scale 0.32",1:1,"style_formula","generate"
+vow_seal_ui,combat_ui,ui,"Three ritual decree seals for 镇守, 借影 and 焚谶; aged brass, soaked paper and vermilion cord; large readable symbols",1:1,"style_formula","generate"
+ritual_ring_vfx,combat_vfx,procedural,"Concentric wet-stone ripple, brass seal geometry, ash motes and rain impact circles",dynamic,"style_formula","procedural"
+echo_witness_vfx,combat_vfx,procedural,"Delayed amber silhouette replay, teal afterimage trail and paper-ash fracture at impact",dynamic,"style_formula","procedural"
+rain_mist_grade,atmosphere_vfx,procedural,"Layered oblique cold rain, low volumetric mist, soft vignette and occasional lantern bloom; no screen-obscuring sheets",dynamic,"style_formula","procedural"
+ritual_ambient,audio,"Sparse bowed metal, rain on roof tiles, distant funeral bell and low breath-like drone",loop,"style_formula","generate"
+vow_feedback,audio,"Three short ritual confirmations: bronze lock, paper whisper and cord snap",sfx,"style_formula","generate"
