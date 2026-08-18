@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="灯谶 Lantern Omen：中式恐怖肉鸽试玩作品集">
+  <title>灯谶 | Lantern Omen</title>
+  <style>
+    :root{--ink:#070a0d;--paper:#eee4d0;--fog:#9da8a7;--amber:#e5a04d;--jade:#57bdad;--red:#ad3a38;--line:rgba(238,228,208,.15)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:"Microsoft YaHei",system-ui,sans-serif;line-height:1.65}
+    .hero{min-height:100vh;padding:8vh 8vw;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 45%,rgba(37,85,84,.54),transparent 29%),radial-gradient(ellipse at 65% 72%,rgba(185,100,40,.16),transparent 24%),linear-gradient(117deg,#06080a 8%,#111a20 58%,#061014)}
+    .hero:before{content:"";position:absolute;inset:0;opacity:.38;background:repeating-linear-gradient(106deg,transparent 0 48px,rgba(190,220,225,.18) 49px 50px,transparent 51px 98px)}
+    .hero:after{content:"";position:absolute;width:min(50vw,690px);height:min(50vw,690px);right:-12vw;bottom:-18vw;border:2px solid rgba(229,160,77,.23);border-radius:50%;box-shadow:0 0 0 35px rgba(229,160,77,.025),0 0 0 90px rgba(229,160,77,.018),0 0 160px rgba(229,160,77,.18)}
+    .hero>*{position:relative;z-index:1}.eyebrow{margin:0;color:var(--amber);font:12px ui-monospace,monospace;letter-spacing:.17em}.brand{margin:10vh 0 22px;font:clamp(66px,10vw,150px)/.87 Georgia,"Songti SC",serif;letter-spacing:-.08em}.brand em{color:var(--amber);font-style:normal}.lead{max-width:590px;color:#d7cfc1;font-size:17px}.btn{display:inline-block;width:max-content;margin-top:26px;padding:14px 22px;border:1px solid var(--amber);background:rgba(7,10,13,.55);color:var(--paper);text-decoration:none;transition:.2s}.btn:hover{background:var(--amber);color:#180e08}.facts{display:flex;flex-wrap:wrap;gap:34px;margin-top:56px;color:#a7aaa7;font:12px ui-monospace,monospace}.facts b{display:block;margin-top:5px;color:var(--paper);font-size:13px}
+    .section{max-width:1180px;margin:auto;padding:110px 8vw;border-top:1px solid var(--line)}h2{margin:0 0 24px;font:clamp(35px,5vw,72px)/.95 Georgia,"Songti SC",serif}.copy{max-width:780px;color:#c3bdb3}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}.card{padding:28px;border:1px solid var(--line);background:#0c1015}.card b{display:block;color:var(--amber);font:700 30px Georgia,"Songti SC",serif}.card p{margin:8px 0 0;color:#b9b4aa;font-size:14px}.play{background:radial-gradient(circle at 50% 0,rgba(87,189,173,.13),transparent 36%),#070a0d}.game-wrap{max-width:960px;margin:40px auto 0;border:1px solid rgba(229,160,77,.7);box-shadow:0 20px 90px #000}.game-wrap canvas{display:block;width:100%;height:auto;background:#090d11}.hud-note{max-width:960px;margin:14px auto;color:#a9a59e;font-size:13px}.footer{padding:32px 8vw;border-top:1px solid var(--line);color:#777;font:12px ui-monospace,monospace}@media(max-width:720px){.hero{padding:8vh 7vw}.section{padding:75px 7vw}.grid{grid-template-columns:1fr}.facts{gap:18px}}
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <p class="eyebrow">01 / FOLK-HORROR ROGUELITE PROTOTYPE</p>
+    <h1 class="brand">灯火不熄，<br><em>旧影</em>不散。</h1>
+    <p class="lead">《灯谶》是一款以雨夜祭场为舞台的中式恐怖 Roguelite。玩家不是单纯在怪潮中求生，而是用灯火重新夺回一场正在崩坏的祭仪。</p>
+    <a class="btn" href="#play">点灯进入试玩 ↗</a>
+    <div class="facts"><span>GENRE<b>Action Roguelite</b></span><span>CORE LOOP<b>建灯界 · 破邪祟 · 续祭仪</b></span><span>BUILD<b>Public Web Canvas</b></span></div>
+  </section>
+  <section class="section">
+    <p class="eyebrow">02 / THE DIFFERENCE</p>
+    <h2>不是绕圈割草，<br>而是夺回一座祭场。</h2>
+    <p class="copy">传统幸存者玩法把地图视作中性的刷怪容器。《灯谶》则把地图做成一场持续失败的祭仪：你要穿过危险区域点亮祭灯，建立一片片能呼吸、能反击、也可能失守的灯界。</p>
+    <div class="grid"><article class="card"><b>引魂</b><p>靠近固定祭灯并长按 E。它不是一次性任务，而是会永久留存的空间节点。</p></article><article class="card"><b>灯界</b><p>灯界内邪祟减速；第二盏灯启动周期回响；第三盏灯强化照夜。</p></article><article class="card"><b>破谶</b><p>构筑不只提高伤害，也决定你是否敢离开已有安全区去接管下一片黑暗。</p></article></div>
+  </section>
+  <section id="play" class="section play">
+    <p class="eyebrow">03 / PLAYABLE RITUAL</p><h2>雨还没停。<br>提灯上路。</h2>
+    <p class="copy">WASD 移动；靠近祭灯时长按 E 建立灯界；满灯焰时按 Q 释放照夜。目标是点亮三盏祭灯，而不是无止境绕圈逃跑。</p>
+    <div class="game-wrap"><canvas id="game" width="960" height="540" aria-label="灯谶试玩"></canvas></div>
+    <p class="hud-note">每盏祭灯都会永久改变战场。请思考：你要先守住哪一片光？</p>
+  </section>
+  <footer class="footer">灯谶 / Lantern Omen · Public Portfolio Build · 2026</footer>
+<script>
+const c=document.querySelector('#game'),g=c.getContext('2d'),W=c.width,H=c.height,keys={};let p={x:W/2,y:H/2,hp:100,flame:0},lamps=[{x:230,y:170,lit:false},{x:730,y:185,lit:false},{x:500,y:385,lit:false}],enemies=[],time=0,last=0;addEventListener('keydown',e=>keys[e.code]=true);addEventListener('keyup',e=>keys[e.code]=false);const d=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);function spawn(){const a=Math.random()*Math.PI*2,r=420;enemies.push({x:p.x+Math.cos(a)*r,y:p.y+Math.sin(a)*r,hp:4+Math.floor(time/24),v:34+Math.min(28,time/12)})}function draw(lit){const bg=g.createLinearGradient(0,0,0,H);bg.addColorStop(0,'#0b151c');bg.addColorStop(1,'#06080c');g.fillStyle=bg;g.fillRect(0,0,W,H);for(let i=0;i<90;i++){g.strokeStyle='rgba(160,205,225,.15)';g.beginPath();g.moveTo((i*83+time*15)%W,-10);g.lineTo((i*83+time*15)%W-14,H);g.stroke()}for(const l of lamps){g.beginPath();g.arc(l.x,l.y,l.lit?130:35,0,Math.PI*2);g.fillStyle=l.lit?'rgba(229,160,77,.10)':'rgba(185,135,69,.05)';g.fill();g.strokeStyle=l.lit?'#e5a04d':'#8b704c';g.lineWidth=2;g.stroke();g.fillStyle=l.lit?'#ffe0a0':'#3c5e5b';g.fillRect(l.x-8,l.y-12,16,24);g.fillStyle='#d9b56c';g.fillRect(l.x-11,l.y+12,22,4);if(l.hold){g.fillStyle='#eee4d0';g.font='12px monospace';g.fillText('引魂 '+Math.floor(l.hold*100)+'%',l.x-31,l.y-37)}}for(const e of enemies){g.fillStyle='#57bdad';g.beginPath();g.arc(e.x,e.y,10,0,Math.PI*2);g.fill();g.strokeStyle='#cbf0e7';g.stroke()}g.fillStyle='#e5a04d';g.beginPath();g.arc(p.x,p.y,12,0,Math.PI*2);g.fill();g.fillStyle='#fff0bc';g.beginPath();g.arc(p.x+7,p.y-4,4,0,Math.PI*2);g.fill();g.fillStyle='rgba(5,7,10,.72)';g.fillRect(16,16,230,48);g.font='14px monospace';g.fillStyle='#eee4d0';g.fillText('HP '+Math.ceil(p.hp)+'/100',26,38);g.fillStyle='#e5a04d';g.fillRect(26,44,190*(p.hp/100),5);g.fillStyle='#57bdad';g.fillText('灯界 '+lit+'/3',W-132,34);g.fillText('灯焰 '+Math.floor(p.flame)+'/100',W-155,54);g.fillStyle='#b9b4aa';g.fillText('靠近祭灯长按 E · 满灯焰按 Q',W/2-130,H-18)}function loop(ms){const dt=Math.min(.035,(ms-last)/1000||0);last=ms;time+=dt;let dx=(keys.KeyD?1:0)-(keys.KeyA?1:0),dy=(keys.KeyS?1:0)-(keys.KeyW?1:0),n=Math.hypot(dx,dy)||1;p.x=Math.max(18,Math.min(W-18,p.x+dx/n*175*dt));p.y=Math.max(18,Math.min(H-18,p.y+dy/n*175*dt));if(Math.random()<dt*1.25)spawn();for(const l of lamps){if(!l.lit&&d(p,l)<57&&keys.KeyE){l.hold=(l.hold||0)+dt;if(l.hold>1){l.lit=true;p.flame=Math.min(100,p.flame+30)}}else l.hold=0}const lit=lamps.filter(l=>l.lit).length;for(const e of enemies){const vx=p.x-e.x,vy=p.y-e.y,dis=Math.hypot(vx,vy)||1,slow=lamps.some(l=>l.lit&&d(e,l)<130)?.55:1;e.x+=vx/dis*e.v*slow*dt;e.y+=vy/dis*e.v*slow*dt;if(dis<20)p.hp=Math.max(0,p.hp-11*dt);if(Math.random()<dt*2.4&&dis<210)e.hp--}if(keys.KeyQ&&p.flame>=100){p.flame=0;for(const e of enemies)e.hp-=4+lit*2}for(const e of enemies)if(e.hp<=0)p.flame=Math.min(100,p.flame+5);enemies=enemies.filter(e=>e.hp>0);draw(lit);requestAnimationFrame(loop)}requestAnimationFrame(loop);
+</script>
+</body>
+</html>
