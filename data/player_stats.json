@@ -1,0 +1,22 @@
+{
+  "base": {
+    "hp": 110,
+    "damage": 18,
+    "fireRate": 0.36,
+    "critChance": 0.08,
+    "projectileSpeed": 24,
+    "moveSpeed": 10.5,
+    "magnet": 6.5,
+    "armor": 0
+  },
+  "description": {
+    "hp": "生命值，保证前期容错",
+    "damage": "基础伤害，保证击杀效率",
+    "fireRate": "攻击间隔（秒），控制输出频率",
+    "critChance": "暴击概率，提供波动反馈",
+    "projectileSpeed": "弹道速度，影响命中感",
+    "moveSpeed": "移动速度，决定走位空间",
+    "magnet": "拾取范围，影响资源回收效率",
+    "armor": "护甲值，后续成长向生存变量"
+  }
+}

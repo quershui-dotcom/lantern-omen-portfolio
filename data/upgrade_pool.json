@@ -1,0 +1,54 @@
+{
+  "schools": {
+    "fire":   { "name": "灯火", "color": "#E87C30", "icon": "🔥", "description": "稳定持续输出 · 点燃流 / 直射流" },
+    "spirit": { "name": "徊灵", "color": "#1D9E75", "icon": "🕯️", "description": "自动索敌 / 回复 / 容错" },
+    "slash":  { "name": "斩命", "color": "#D85A30", "icon": "⚡", "description": "暴击 / 机动 / 爆发" },
+    "echo":   { "name": "回响", "color": "#7F77DD", "icon": "🔔", "description": "范围清场 / 节奏爆发" }
+  },
+  "rarity_weights": { "common": 60, "rare": 30, "epic": 10 },
+  "upgrades": [
+    { "id": "T01", "name": "灯芯加粗", "school": "fire", "rarity": "common", "effect": "damage_multiplier", "value": 0.10, "stat": "伤害", "synergy": "灯火", "description": "基础伤害提升 10%" },
+    { "id": "T02", "name": "燃油添加", "school": "fire", "rarity": "common", "effect": "fire_rate_multiplier", "value": 0.15, "stat": "射速", "synergy": "灯火", "description": "射速提升 15%" },
+    { "id": "T03", "name": "余烬引燃", "school": "fire", "rarity": "rare", "effect": "ignite_chance", "value": 0.15, "stat": "点燃", "synergy": "灯火+点燃", "description": "15% 概率点燃敌人，每秒 5% HP 持续 3 秒" },
+    { "id": "T04", "name": "烈焰喷射", "school": "fire", "rarity": "rare", "effect": "pierce_add", "value": 1, "stat": "穿透", "synergy": "灯火", "description": "投射物穿透 +1" },
+    { "id": "T05", "name": "炽热弹头", "school": "fire", "rarity": "epic", "effect": "crit_damage_multiplier", "value": 0.50, "stat": "暴伤", "synergy": "灯火+斩命", "description": "暴击伤害倍率 +50%（跨流派联动斩命）" },
+    { "id": "T06", "name": "不灭灯火", "school": "fire", "rarity": "epic", "effect": "kill_speed_boost", "value": 0.30, "stat": "滚雪球", "synergy": "灯火", "description": "击杀后 +30% 射速，持续 3 秒" },
+    { "id": "T07", "name": "焚风助势", "school": "fire", "rarity": "rare", "effect": "burn_trail", "value": 1, "stat": "点燃AOE", "synergy": "灯火+点燃", "description": "被点燃的敌人移动时留下火焰轨迹，每秒 3% HP" },
+    { "id": "T08", "name": "爆裂灯油", "school": "fire", "rarity": "rare", "effect": "area_damage_add", "value": 0.60, "stat": "溅射", "synergy": "灯火", "description": "命中后小范围溅射，造成 60% 伤害" },
+    { "id": "T09", "name": "长明不熄", "school": "fire", "rarity": "common", "effect": "fire_rate_multiplier", "value": 0.12, "stat": "射速", "synergy": "灯火", "description": "攻击间隔缩短 12%" },
+    { "id": "T10", "name": "燎原之势", "school": "fire", "rarity": "epic", "effect": "ignite_spread", "value": 3, "stat": "点燃传播", "synergy": "灯火+点燃", "description": "被点燃的敌人死亡时将点燃传播给附近敌人（最多 3 次）" },
+
+    { "id": "H01", "name": "魂火环绕", "school": "spirit", "rarity": "common", "effect": "add_orbiting_projectile", "value": 1, "stat": "魂火", "synergy": "徊灵+自动", "description": "获得一个环绕自身的自动攻击魂火（每 2 秒造成 50% 伤害）" },
+    { "id": "H02", "name": "灵体治愈", "school": "spirit", "rarity": "common", "effect": "hp_regen", "value": 2, "stat": "回复", "synergy": "徊灵+回复", "description": "每秒回复 2 点生命" },
+    { "id": "H03", "name": "幽影护盾", "school": "spirit", "rarity": "rare", "effect": "shield_on_hit", "value": 10, "stat": "护盾", "synergy": "徊灵+生存", "description": "受击后获得 10 点护盾，持续 5 秒（CD 8 秒）" },
+    { "id": "H04", "name": "双魂伴行", "school": "spirit", "rarity": "rare", "effect": "orbiting_count_add", "value": 1, "stat": "魂火", "synergy": "徊灵+自动", "description": "魂火数量 +1" },
+    { "id": "H05", "name": "灵魂汲取", "school": "spirit", "rarity": "epic", "effect": "lifesteal", "value": 3, "stat": "吸血", "synergy": "徊灵+回复", "description": "击杀敌人回复 3 点生命" },
+    { "id": "H06", "name": "往生超度", "school": "spirit", "rarity": "rare", "effect": "exp_multiplier", "value": 0.20, "stat": "经验", "synergy": "徊灵+成长", "description": "经验获取提升 20%" },
+    { "id": "H07", "name": "生生不息", "school": "spirit", "rarity": "rare", "effect": "regen_multiplier", "value": 0.40, "stat": "回复", "synergy": "徊灵+回复", "description": "所有回复效果 +40%" },
+    { "id": "H08", "name": "幽冥屏障", "school": "spirit", "rarity": "epic", "effect": "max_hp_multiplier", "value": 0.25, "stat": "护盾值", "synergy": "徊灵+生存", "description": "最大生命值 +25%（永久护盾）" },
+    { "id": "H09", "name": "借尸还魂", "school": "spirit", "rarity": "epic", "effect": "revive", "value": 0.50, "stat": "保命", "synergy": "徊灵+生存", "description": "每局限一次：受到致命伤害时免疫并回复 50% 生命" },
+    { "id": "H10", "name": "百鬼夜行", "school": "spirit", "rarity": "rare", "effect": "orbit_slow", "value": 0.15, "stat": "魂火控制", "synergy": "徊灵+自动", "description": "魂火攻击速度 +30%，命中减速敌人 15%" },
+
+    { "id": "Z01", "name": "利刃磨砺", "school": "slash", "rarity": "common", "effect": "crit_chance_add", "value": 0.05, "stat": "暴击率", "synergy": "斩命", "description": "暴击率提升 5%" },
+    { "id": "Z02", "name": "疾步轻身", "school": "slash", "rarity": "common", "effect": "move_speed_multiplier", "value": 0.10, "stat": "移速", "synergy": "斩命+机动", "description": "移动速度提升 10%" },
+    { "id": "Z03", "name": "致命一击", "school": "slash", "rarity": "rare", "effect": "crit_damage_multiplier", "value": 0.40, "stat": "暴伤", "synergy": "斩命", "description": "暴击伤害提升 40%" },
+    { "id": "Z04", "name": "瞬影步", "school": "slash", "rarity": "rare", "effect": "dash_ability", "value": 170, "stat": "位移", "synergy": "斩命+机动", "description": "强化基础瞬影：冲刺距离提升至 170px" },
+    { "id": "Z05", "name": "见血封喉", "school": "slash", "rarity": "epic", "effect": "fullhp_bonus", "value": 0.30, "stat": "爆发", "synergy": "斩命", "description": "对满血敌人额外造成 30% 伤害" },
+    { "id": "Z06", "name": "破甲利刃", "school": "slash", "rarity": "rare", "effect": "crit_damage_multiplier", "value": 0.25, "stat": "暴伤", "synergy": "斩命+暴击", "description": "暴击伤害 +25%（破甲）" },
+    { "id": "Z07", "name": "闪袭连斩", "school": "slash", "rarity": "rare", "effect": "dash_speed", "value": 0.40, "stat": "攻速", "synergy": "斩命+机动", "description": "冲刺后 +40% 攻击速度，持续 3 秒" },
+    { "id": "Z08", "name": "背水一战", "school": "slash", "rarity": "epic", "effect": "damage_per_missing_hp", "value": 0.05, "stat": "残血", "synergy": "斩命", "description": "每损失 10% 生命，伤害 +5%（上限 +50%）" },
+    { "id": "Z09", "name": "连环猎杀", "school": "slash", "rarity": "rare", "effect": "kill_crit", "value": 0.08, "stat": "暴击率", "synergy": "斩命+暴击", "description": "击杀后 +8% 暴击率，持续 4 秒（可叠 2 层）" },
+    { "id": "Z10", "name": "一刀两断", "school": "slash", "rarity": "epic", "effect": "execute_kill", "value": 0.15, "stat": "斩杀", "synergy": "斩命+斩杀", "description": "暴击命中 HP<15% 的敌人时直接斩杀" },
+
+    { "id": "X01", "name": "铃音扩散", "school": "echo", "rarity": "common", "effect": "projectile_size_multiplier", "value": 0.15, "stat": "范围", "synergy": "回响+范围", "description": "攻击范围（弹体）提升 15%" },
+    { "id": "X02", "name": "共鸣波纹", "school": "echo", "rarity": "common", "effect": "kill_wave", "value": 0.30, "stat": "冲击波", "synergy": "回响+范围", "description": "击杀时产生小范围冲击波（半径 60，30% 伤害）" },
+    { "id": "X03", "name": "震魂钟鸣", "school": "echo", "rarity": "rare", "effect": "periodic_wave", "value": 10, "stat": "周期AOE", "synergy": "回响", "description": "每 10 秒释放环形冲击波（半径 120，80% 伤害）" },
+    { "id": "X04", "name": "磁石吸引", "school": "echo", "rarity": "rare", "effect": "magnet_multiplier", "value": 0.40, "stat": "拾取", "synergy": "回响+成长", "description": "拾取范围提升 40%" },
+    { "id": "X05", "name": "万灵回响", "school": "echo", "rarity": "epic", "effect": "wave_chain", "value": 3, "stat": "连锁", "synergy": "回响+连锁", "description": "冲击波击杀可再触发新冲击波（最多 3 次）" },
+    { "id": "X06", "name": "缓魂结界", "school": "echo", "rarity": "rare", "effect": "hit_slow", "value": 0.20, "stat": "控制", "synergy": "回响+控制", "description": "命中敌人减速 20%，持续 1.5 秒" },
+    { "id": "X07", "name": "三重铃响", "school": "echo", "rarity": "rare", "effect": "extra_projectile", "value": 1, "stat": "多重", "synergy": "回响+范围", "description": "额外发射 1 道投射物（伤害降至 70%）" },
+    { "id": "X08", "name": "灵气汇聚", "school": "echo", "rarity": "rare", "effect": "exp_multiplier", "value": 0.25, "stat": "经验", "synergy": "回响+成长", "description": "经验获取提升 25%" },
+    { "id": "X09", "name": "镇魂钟声", "school": "echo", "rarity": "epic", "effect": "global_stun", "value": 15, "stat": "定身", "synergy": "回响+控制", "description": "每 15 秒，半径 200 内敌人定身 2 秒" },
+    { "id": "X10", "name": "天地共振", "school": "echo", "rarity": "epic", "effect": "global_wave_interval", "value": 8, "stat": "全屏AOE", "synergy": "回响+范围", "description": "每 8 秒对所有敌人造成 20% 伤害" }
+  ]
+}

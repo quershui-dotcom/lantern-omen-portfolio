@@ -1,43 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="灯谶 Lantern Omen：中式恐怖肉鸽试玩作品集">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090a11" />
+  <meta name="description" content="《灯谶》——一盏灯，照见民俗怪谈中的生存抉择。" />
   <title>灯谶 | Lantern Omen</title>
   <style>
-    :root{--ink:#070a0d;--paper:#eee4d0;--fog:#9da8a7;--amber:#e5a04d;--jade:#57bdad;--red:#ad3a38;--line:rgba(238,228,208,.15)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:"Microsoft YaHei",system-ui,sans-serif;line-height:1.65}
-    .hero{min-height:100vh;padding:8vh 8vw;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 45%,rgba(37,85,84,.54),transparent 29%),radial-gradient(ellipse at 65% 72%,rgba(185,100,40,.16),transparent 24%),linear-gradient(117deg,#06080a 8%,#111a20 58%,#061014)}
-    .hero:before{content:"";position:absolute;inset:0;opacity:.38;background:repeating-linear-gradient(106deg,transparent 0 48px,rgba(190,220,225,.18) 49px 50px,transparent 51px 98px)}
-    .hero:after{content:"";position:absolute;width:min(50vw,690px);height:min(50vw,690px);right:-12vw;bottom:-18vw;border:2px solid rgba(229,160,77,.23);border-radius:50%;box-shadow:0 0 0 35px rgba(229,160,77,.025),0 0 0 90px rgba(229,160,77,.018),0 0 160px rgba(229,160,77,.18)}
-    .hero>*{position:relative;z-index:1}.eyebrow{margin:0;color:var(--amber);font:12px ui-monospace,monospace;letter-spacing:.17em}.brand{margin:10vh 0 22px;font:clamp(66px,10vw,150px)/.87 Georgia,"Songti SC",serif;letter-spacing:-.08em}.brand em{color:var(--amber);font-style:normal}.lead{max-width:590px;color:#d7cfc1;font-size:17px}.btn{display:inline-block;width:max-content;margin-top:26px;padding:14px 22px;border:1px solid var(--amber);background:rgba(7,10,13,.55);color:var(--paper);text-decoration:none;transition:.2s}.btn:hover{background:var(--amber);color:#180e08}.facts{display:flex;flex-wrap:wrap;gap:34px;margin-top:56px;color:#a7aaa7;font:12px ui-monospace,monospace}.facts b{display:block;margin-top:5px;color:var(--paper);font-size:13px}
-    .section{max-width:1180px;margin:auto;padding:110px 8vw;border-top:1px solid var(--line)}h2{margin:0 0 24px;font:clamp(35px,5vw,72px)/.95 Georgia,"Songti SC",serif}.copy{max-width:780px;color:#c3bdb3}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}.card{padding:28px;border:1px solid var(--line);background:#0c1015}.card b{display:block;color:var(--amber);font:700 30px Georgia,"Songti SC",serif}.card p{margin:8px 0 0;color:#b9b4aa;font-size:14px}.play{background:radial-gradient(circle at 50% 0,rgba(87,189,173,.13),transparent 36%),#070a0d}.game-wrap{max-width:960px;margin:40px auto 0;border:1px solid rgba(229,160,77,.7);box-shadow:0 20px 90px #000}.game-wrap canvas{display:block;width:100%;height:auto;background:#090d11}.hud-note{max-width:960px;margin:14px auto;color:#a9a59e;font-size:13px}.footer{padding:32px 8vw;border-top:1px solid var(--line);color:#777;font:12px ui-monospace,monospace}@media(max-width:720px){.hero{padding:8vh 7vw}.section{padding:75px 7vw}.grid{grid-template-columns:1fr}.facts{gap:18px}}
+    .hero-orb,.hero-lantern{display:none}.hero-inner{position:relative;z-index:2}.hero-illustration{position:absolute;z-index:1;top:3.5%;right:0;bottom:0;width:min(51vw,720px);overflow:hidden;pointer-events:none;mask-image:linear-gradient(to right,transparent 0%,#000 16%,#000 91%,transparent 100%)}.hero-illustration::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,#0a0a12 0%,transparent 27%),linear-gradient(to bottom,rgba(10,10,18,.15),rgba(10,10,18,.25));mix-blend-mode:multiply}.hero-illustration img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%;filter:saturate(.76) contrast(1.04) brightness(.88)}@media(max-width:760px){.hero-illustration{width:118vw;right:-42%;top:5%;bottom:7%;opacity:.56;mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 76%,transparent 100%)}.hero-illustration img{object-position:center 43%}}
   </style>
+  <script type="module" crossorigin src="./assets/index-D-wm85l4.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C-MKJprH.css">
 </head>
 <body>
-  <section class="hero">
-    <p class="eyebrow">01 / FOLK-HORROR ROGUELITE PROTOTYPE</p>
-    <h1 class="brand">灯火不熄，<br><em>旧影</em>不散。</h1>
-    <p class="lead">《灯谶》是一款以雨夜祭场为舞台的中式恐怖 Roguelite。玩家不是单纯在怪潮中求生，而是用灯火重新夺回一场正在崩坏的祭仪。</p>
-    <a class="btn" href="#play">点灯进入试玩 ↗</a>
-    <div class="facts"><span>GENRE<b>Action Roguelite</b></span><span>CORE LOOP<b>建灯界 · 破邪祟 · 续祭仪</b></span><span>BUILD<b>Public Web Canvas</b></span></div>
-  </section>
-  <section class="section">
-    <p class="eyebrow">02 / THE DIFFERENCE</p>
-    <h2>不是绕圈割草，<br>而是夺回一座祭场。</h2>
-    <p class="copy">传统幸存者玩法把地图视作中性的刷怪容器。《灯谶》则把地图做成一场持续失败的祭仪：你要穿过危险区域点亮祭灯，建立一片片能呼吸、能反击、也可能失守的灯界。</p>
-    <div class="grid"><article class="card"><b>引魂</b><p>靠近固定祭灯并长按 E。它不是一次性任务，而是会永久留存的空间节点。</p></article><article class="card"><b>灯界</b><p>灯界内邪祟减速；第二盏灯启动周期回响；第三盏灯强化照夜。</p></article><article class="card"><b>破谶</b><p>构筑不只提高伤害，也决定你是否敢离开已有安全区去接管下一片黑暗。</p></article></div>
-  </section>
-  <section id="play" class="section play">
-    <p class="eyebrow">03 / PLAYABLE RITUAL</p><h2>雨还没停。<br>提灯上路。</h2>
-    <p class="copy">WASD 移动；靠近祭灯时长按 E 建立灯界；满灯焰时按 Q 释放照夜。目标是点亮三盏祭灯，而不是无止境绕圈逃跑。</p>
-    <div class="game-wrap"><canvas id="game" width="960" height="540" aria-label="灯谶试玩"></canvas></div>
-    <p class="hud-note">每盏祭灯都会永久改变战场。请思考：你要先守住哪一片光？</p>
-  </section>
-  <footer class="footer">灯谶 / Lantern Omen · Public Portfolio Build · 2026</footer>
-<script>
-const c=document.querySelector('#game'),g=c.getContext('2d'),W=c.width,H=c.height,keys={};let p={x:W/2,y:H/2,hp:100,flame:0},lamps=[{x:230,y:170,lit:false},{x:730,y:185,lit:false},{x:500,y:385,lit:false}],enemies=[],time=0,last=0;addEventListener('keydown',e=>keys[e.code]=true);addEventListener('keyup',e=>keys[e.code]=false);const d=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);function spawn(){const a=Math.random()*Math.PI*2,r=420;enemies.push({x:p.x+Math.cos(a)*r,y:p.y+Math.sin(a)*r,hp:4+Math.floor(time/24),v:34+Math.min(28,time/12)})}function draw(lit){const bg=g.createLinearGradient(0,0,0,H);bg.addColorStop(0,'#0b151c');bg.addColorStop(1,'#06080c');g.fillStyle=bg;g.fillRect(0,0,W,H);for(let i=0;i<90;i++){g.strokeStyle='rgba(160,205,225,.15)';g.beginPath();g.moveTo((i*83+time*15)%W,-10);g.lineTo((i*83+time*15)%W-14,H);g.stroke()}for(const l of lamps){g.beginPath();g.arc(l.x,l.y,l.lit?130:35,0,Math.PI*2);g.fillStyle=l.lit?'rgba(229,160,77,.10)':'rgba(185,135,69,.05)';g.fill();g.strokeStyle=l.lit?'#e5a04d':'#8b704c';g.lineWidth=2;g.stroke();g.fillStyle=l.lit?'#ffe0a0':'#3c5e5b';g.fillRect(l.x-8,l.y-12,16,24);g.fillStyle='#d9b56c';g.fillRect(l.x-11,l.y+12,22,4);if(l.hold){g.fillStyle='#eee4d0';g.font='12px monospace';g.fillText('引魂 '+Math.floor(l.hold*100)+'%',l.x-31,l.y-37)}}for(const e of enemies){g.fillStyle='#57bdad';g.beginPath();g.arc(e.x,e.y,10,0,Math.PI*2);g.fill();g.strokeStyle='#cbf0e7';g.stroke()}g.fillStyle='#e5a04d';g.beginPath();g.arc(p.x,p.y,12,0,Math.PI*2);g.fill();g.fillStyle='#fff0bc';g.beginPath();g.arc(p.x+7,p.y-4,4,0,Math.PI*2);g.fill();g.fillStyle='rgba(5,7,10,.72)';g.fillRect(16,16,230,48);g.font='14px monospace';g.fillStyle='#eee4d0';g.fillText('HP '+Math.ceil(p.hp)+'/100',26,38);g.fillStyle='#e5a04d';g.fillRect(26,44,190*(p.hp/100),5);g.fillStyle='#57bdad';g.fillText('灯界 '+lit+'/3',W-132,34);g.fillText('灯焰 '+Math.floor(p.flame)+'/100',W-155,54);g.fillStyle='#b9b4aa';g.fillText('靠近祭灯长按 E · 满灯焰按 Q',W/2-130,H-18)}function loop(ms){const dt=Math.min(.035,(ms-last)/1000||0);last=ms;time+=dt;let dx=(keys.KeyD?1:0)-(keys.KeyA?1:0),dy=(keys.KeyS?1:0)-(keys.KeyW?1:0),n=Math.hypot(dx,dy)||1;p.x=Math.max(18,Math.min(W-18,p.x+dx/n*175*dt));p.y=Math.max(18,Math.min(H-18,p.y+dy/n*175*dt));if(Math.random()<dt*1.25)spawn();for(const l of lamps){if(!l.lit&&d(p,l)<57&&keys.KeyE){l.hold=(l.hold||0)+dt;if(l.hold>1){l.lit=true;p.flame=Math.min(100,p.flame+30)}}else l.hold=0}const lit=lamps.filter(l=>l.lit).length;for(const e of enemies){const vx=p.x-e.x,vy=p.y-e.y,dis=Math.hypot(vx,vy)||1,slow=lamps.some(l=>l.lit&&d(e,l)<130)?.55:1;e.x+=vx/dis*e.v*slow*dt;e.y+=vy/dis*e.v*slow*dt;if(dis<20)p.hp=Math.max(0,p.hp-11*dt);if(Math.random()<dt*2.4&&dis<210)e.hp--}if(keys.KeyQ&&p.flame>=100){p.flame=0;for(const e of enemies)e.hp-=4+lit*2}for(const e of enemies)if(e.hp<=0)p.flame=Math.min(100,p.flame+5);enemies=enemies.filter(e=>e.hp>0);draw(lit);requestAnimationFrame(loop)}requestAnimationFrame(loop);
-</script>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="返回首页">
+      <strong>灯谶</strong><small>Lantern Omen / Portfolio</small>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#world">世界</a>
+      <a href="#chapters">章节</a>
+      <a href="#system">系统</a>
+      <a class="nav-cta" href="#play" data-launch-game>进入试玩</a>
+    </nav>
+  </header>
+
+  <nav class="progress" aria-label="章节进度">
+    <a class="active" href="#top" aria-label="开篇"></a>
+    <a href="#world" aria-label="世界"></a>
+    <a href="#chapters" aria-label="章节"></a>
+    <a href="#system" aria-label="系统"></a>
+    <a href="#play" aria-label="试玩"></a>
+  </nav>
+
+  <main class="content">
+    <section id="top" data-section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-illustration" aria-hidden="true"><img src="./assets/river-lantern-puppet.png" alt="" /></div>
+      <div class="hero-inner reveal">
+        <p class="eyebrow">01 / A folk horror survival prototype</p>
+        <h1 id="hero-title">灯火不熄，<br /><em>旧影</em>不散。</h1>
+        <div class="hero-summary">
+          <p>《灯谶》是一款以民俗怪谈为底色的 2D Roguelike 生存原型。玩家手提孤灯穿过雨夜祠堂，在每一次抉择与幸存之间，逐步拼合被遗忘的禁忌。</p>
+          <aside class="hero-facts" aria-label="项目信息">
+            <div><span>Genre</span><strong>Roguelike / Survival</strong></div>
+            <div><span>Build</span><strong>Phaser 3 + Vite</strong></div>
+            <div><span>Core loop</span><strong>探索 · 迎战 · 取舍</strong></div>
+          </aside>
+        </div>
+        <div class="actions">
+          <button class="button button-primary" type="button" data-launch-game>点灯进入试玩 <span class="arrow" aria-hidden="true">↗</span></button>
+          <a class="button button-secondary" href="#world">阅读设计叙事 <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="world" data-section class="chapter" aria-labelledby="world-title">
+      <div class="chapter-head reveal">
+        <span class="chapter-no">02 / WORLD</span>
+        <div><h2 id="world-title" class="chapter-title">不是打败怪物，<br />而是穿过<span>恐惧</span>。</h2><p class="chapter-lead">首页将原本孤立的菜单界面扩展为一段可读的开场：先让玩家理解“灯”是什么，再理解自己为什么必须向前。</p></div>
+      </div>
+      <div class="world-grid reveal">
+        <article class="world-card"><span class="tag">WORLD PREMISE / 雨夜祠堂</span><h3>灯是唯一的边界</h3><p>暖橙代表可见、可控与短暂的庇护；青绿则指向游离的魂火与未知。两种色温持续冲突，让每一次离开灯下都成为有代价的决定。</p></article>
+        <div class="world-meta">
+          <div><span>情绪弧线</span><b>孤立 → 发现 → 压迫 → 反抗</b></div>
+          <div><span>叙事锚点</span><b>灯、雨、符纸、祠堂、旧铃</b></div>
+          <div><span>视觉语法</span><b>暗场留白、局部暖光、像素颗粒</b></div>
+          <div><span>体验目标</span><b>在 3 秒内读懂氛围与行动目标</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chapters" data-section class="chapter" aria-labelledby="chapters-title">
+      <div class="chapter-head reveal"><span class="chapter-no">03 / JOURNEY</span><div><h2 id="chapters-title" class="chapter-title">一盏灯，三次<br /><span>向前</span>的理由。</h2><p class="chapter-lead">使用“章节”而非功能堆叠组织作品集：每一段都对应原型中一个玩家可感知的体验目标。</p></div></div>
+      <div class="case-stack">
+        <article class="case-card reveal"><div class="case-symbol" aria-hidden="true">灯</div><div><p class="kicker">CHAPTER 01 / THE HOOK</p><h3>提灯入夜</h3><p>以明确的生存前提建立第一层张力：玩家不是全能的猎手，而是在视野有限的雨夜中选择前进方向的人。</p></div><span class="meta">氛围<br />开场</span></article>
+        <article class="case-card reveal"><div class="case-symbol" aria-hidden="true">符</div><div><p class="kicker">CHAPTER 02 / THE LOOP</p><h3>在围困中取舍</h3><p>将刷怪、拾取、升级压缩为连续的风险判断。每个升级项既是数值变化，也应强化“火、灵、斩、回响”的民俗战斗语言。</p></div><span class="meta">核心<br />循环</span></article>
+        <article class="case-card reveal"><div class="case-symbol" aria-hidden="true">铃</div><div><p class="kicker">CHAPTER 03 / THE CLIMAX</p><h3>旧铃响起</h3><p>以首领与异象作为阶段性答案：怪物不是单纯的阻碍，而是叙事碎片。战斗收束时，玩家获得下一次进入黑暗的理由。</p></div><span class="meta">压力<br />兑现</span></article>
+      </div>
+    </section>
+
+    <section data-section class="chapter" aria-labelledby="loop-title">
+      <div class="chapter-head reveal"><span class="chapter-no">04 / LOOP</span><div><h2 id="loop-title" class="chapter-title">让叙事落在<br /><span>每一次操作</span>上。</h2><p class="chapter-lead">页面结构遵循“开场钩子 → 世界规则 → 核心循环 → 设计系统 → 试玩收束”，在不进入游戏前就完成一次完整的情绪递进。</p></div></div>
+      <div class="timeline reveal">
+        <article class="timeline-item"><b>看见</b><p>用灯火与 HUD 层级提示安全区、威胁与当前目标，避免玩家在首屏迷失。</p></article>
+        <article class="timeline-item"><b>选择</b><p>用升级三选一制造短暂停顿；美术、名称与成长方向共同服务于世界观，而非只是属性加成。</p></article>
+        <article class="timeline-item"><b>承受</b><p>用敌人密度、视野压力与色彩入侵放大风险，最后让阶段性敌人完成体验的情绪封口。</p></article>
+      </div>
+    </section>
+
+    <section id="system" data-section class="chapter" aria-labelledby="system-title">
+      <div class="chapter-head reveal"><span class="chapter-no">05 / SYSTEM</span><div><h2 id="system-title" class="chapter-title">暗色，不等于<br /><span>看不清</span>。</h2><p class="chapter-lead">本次调整将已有游戏的暖橙与魂火青绿提炼为网站设计令牌，并以低密度、长呼吸的留白让叙事和试玩入口都清晰可达。</p></div></div>
+      <div class="system-grid reveal">
+        <article class="system-card"><h3>Color / 暗色令牌</h3><div class="token-list"><div><span><i class="swatch" style="background:#090a11"></i>夜幕底色</span><code>#090A11</code></div><div><span><i class="swatch" style="background:#f09a45"></i>灯火强调</span><code>#F09A45</code></div><div><span><i class="swatch" style="background:#66d9c0"></i>魂火信息</span><code>#66D9C0</code></div><div><span><i class="swatch" style="background:#e9e2d4"></i>纸张正文</span><code>#E9E2D4</code></div></div></article>
+        <article class="system-card"><h3>Type / 字体层级</h3><p class="design-rule">标题使用衬线中文，像一页被雨水浸过的旧志。</p><p class="design-rule">信息使用等宽字，保持原型、系统与档案的精确感。</p></article>
+        <article class="system-card"><h3>Motion / 动效原则</h3><ul class="small-list"><li>灯笼只做缓慢浮动，不抢正文。</li><li>区块按阅读节奏淡入，不滚动劫持。</li><li>为减少动态偏好提供静态终态。</li></ul></article>
+      </div>
+    </section>
+
+    <section id="play" data-section class="chapter final" aria-labelledby="play-title">
+      <div class="final-inner reveal"><p class="eyebrow">06 / PLAY THE PROTOTYPE</p><h2 id="play-title">雨还没停。<br />提灯上路。</h2><p>作品集不是一份静态说明，而是进入原型的第一扇门。点击后即可体验现有的《灯谶》生存玩法。</p><button class="button button-primary" type="button" data-launch-game>启动《灯谶》试玩 <span class="arrow" aria-hidden="true">↗</span></button></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>灯谶 / Lantern Omen</span><span>Game Design Portfolio · Phaser 3 Prototype</span><span class="footer-mark">灯火为引</span></footer>
+
+  <div id="game-overlay" class="game-overlay" aria-hidden="true" aria-label="《灯谶》试玩窗口">
+    <button id="close-game" class="game-close" type="button">ESC / 返回作品集</button>
+    <div id="status">正在点亮灯火…</div><div id="error-msg" role="alert"></div><div id="debug-log"></div><div id="game-container"></div>
+  </div>
 </body>
 </html>

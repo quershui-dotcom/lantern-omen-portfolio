@@ -1,0 +1,72 @@
+{
+  "stages": {
+    "P1": {
+      "startTime": 0,
+      "spawnInterval": 2.8,
+      "groupSize": 2,
+      "eliteChance": 0.05,
+      "hpMultiplier": 1.0,
+      "speedMultiplier": 1.0,
+      "description": "引灯：学习走位、自动照击与第一盏祭灯"
+    },
+    "P2": {
+      "startTime": 90,
+      "spawnInterval": 2.35,
+      "groupSize": 3,
+      "eliteChance": 0.10,
+      "hpMultiplier": 1.44,
+      "speedMultiplier": 1.06,
+      "description": "试谶：冲锋精英迫使玩家使用基础瞬影"
+    },
+    "P3": {
+      "startTime": 180,
+      "spawnInterval": 1.95,
+      "groupSize": 4,
+      "eliteChance": 0.14,
+      "hpMultiplier": 1.94,
+      "speedMultiplier": 1.14,
+      "description": "迷灯：远程执灯者与祭仪目标同时施压"
+    },
+    "P4": {
+      "startTime": 300,
+      "spawnInterval": 1.6,
+      "groupSize": 5,
+      "eliteChance": 0.19,
+      "hpMultiplier": 2.5,
+      "speedMultiplier": 1.21,
+      "description": "夜巡：混编敌群检验主脉构筑是否成型"
+    },
+    "P5": {
+      "startTime": 420,
+      "spawnInterval": 1.28,
+      "groupSize": 6,
+      "eliteChance": 0.24,
+      "hpMultiplier": 3.25,
+      "speedMultiplier": 1.28,
+      "description": "灯阵：高压资源调度与照夜时机检验"
+    },
+    "P6": {
+      "startTime": 540,
+      "spawnInterval": 1.0,
+      "groupSize": 0,
+      "eliteChance": 0.0,
+      "hpMultiplier": 3.0,
+      "speedMultiplier": 1.2,
+      "description": "破谶：唯一灯笼巨影 Boss 与 600 秒终局检验"
+    }
+  },
+  "upgradeCurve": {
+    "initialXpNeed": 6,
+    "growthMultiplier": 1.28,
+    "flatAddition": 4,
+    "formula": "xpNeed = floor(xpNeed * 1.28 + 4)"
+  },
+  "events": [
+    { "time": 25, "type": "light_lantern", "target": 3, "duration": 40 },
+    { "time": 75, "type": "kill_count", "target": 18, "duration": 55 },
+    { "time": 135, "type": "survival", "target": 30, "duration": 30 },
+    { "time": 220, "type": "light_lantern", "target": 4, "duration": 50 },
+    { "time": 340, "type": "kill_count", "target": 28, "duration": 70 },
+    { "time": 470, "type": "survival", "target": 40, "duration": 40 }
+  ]
+}
