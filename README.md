@@ -3,7 +3,7 @@
 > 中国民俗怪谈 Roguelite ｜ 系统策划 / 产品运营向作品集
 
 [![打开作品集](https://img.shields.io/badge/打开作品集-立即访问-brightgreen?style=for-the-badge)](https://quershui-dotcom.github.io/lantern-omen-portfolio/?notion-build=1b4a6f51827eafc9a40e7a2006f9921f028b6d79)
-[![Notion 项目首页](https://img.shields.io/badge/Notion-项目首页-000000?style=for-the-badge&logo=notion&logoColor=white)](https://app.notion.com/p/34df146c-8a27-0bb84a7d0b59e4bd3f2?pvs=204)
+[![Notion 项目首页](https://img.shields.io/badge/Notion-项目首页-000000?style=for-the-badge&logo=notion&logoColor=white)](https://grapes-scraper-04f.notion.site/Lantern-Omen-34df146c8a2780bb84a7d0b59e4bd3f2)
 
 《灯谶》是一款以中国民俗怪谈为底色、以 Roguelite 为循环结构的游戏作品集项目，定位为系统策划与产品运营向的展示载体：关注核心循环、叙事互动、版本内容、系统健康指标与可公开试玩的交付质量。
 
@@ -57,7 +57,7 @@
 
 ## 文档索引（来自 Notion）
 
-以下文档从 Notion 工作区同步而来，涵盖《灯谶》从产品定位到战斗实现的核心设计内容。
+以下文档从 Notion 工作区同步而来，涵盖《灯谶》从产品定位到战斗实现的核心设计内容。完整项目结构与全部子页面请访问 [Notion 项目首页](https://grapes-scraper-04f.notion.site/Lantern-Omen-34df146c8a2780bb84a7d0b59e4bd3f2)。
 
 ### 总览与总结
 
@@ -93,7 +93,7 @@
 ## 快速链接
 
 - 作品集（可试玩）：[quershui-dotcom.github.io/lantern-omen-portfolio](https://quershui-dotcom.github.io/lantern-omen-portfolio/?notion-build=1b4a6f51827eafc9a40e7a2006f9921f028b6d79)
-- Notion 项目首页：[灯谶 Lantern Omen — 完整项目结构](https://app.notion.com/p/34df146c-8a27-0bb84a7d0b59e4bd3f2?pvs=204)
+- Notion 项目首页：[灯谶 Lantern Omen — 完整项目结构](https://grapes-scraper-04f.notion.site/Lantern-Omen-34df146c8a2780bb84a7d0b59e4bd3f2)
 - Notion 工作区：[《灯谶》Product Ops Workspace](https://app.notion.com/p/34df146c8a2781d48c1ec1be8ab02adc?pvs=204)
 
 ---
